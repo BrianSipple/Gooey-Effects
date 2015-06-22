@@ -20,7 +20,7 @@ vendor
 # IDEs
 .idea/
 
-gooey-chat
+chat-stream
 
 
 # Misc dotfiles and private configs
