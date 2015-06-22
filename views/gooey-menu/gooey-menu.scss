@@ -1,0 +1,97 @@
+@import '../../styles/application';
+@import 'placeholders';
+
+$icon-color__option: hsla(355, 51%, 48%, 1);
+
+.menu {
+    position: relative;
+    width: 40%;
+    min-width: 400px;
+    height: 30%;
+    min-height: 300px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6em;
+    transform: translateZ(0);
+}
+
+.ic {
+    display: block;
+}
+
+.menu-wrapper {
+    position: absolute;
+    left: 50%;
+    bottom: .8em;
+}
+
+.list_menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.list-item_menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
+// NOTE: This will be done with JS for now
+//@for $i from 0 to 4 {
+//    .list-item_menu:nth-child(#{$i + 1}) {
+//        transform: rotate(#{90 + ($i * 45)}deg);
+//    }
+//}
+
+.button_menu-item__option {
+    @extend %button;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    color: $icon-color__option;
+    margin-left: -30px;
+    margin-top: -30px;
+
+    :hover {
+        color: $font-color-white_icon__dark-background
+    }
+}
+
+.button_menu-item__bounce {
+    @extend %button;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button_menu-item__toggle {
+    @extend %button;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    opacity: 1;
+    font-size: 1.3em;
+    color: $font-color-white_icon__dark-background;
+
+    transition: transform 0.4s $easing_ease-out-cubic;
+
+    i {
+        opacity: 1;
+    }
+
+    &.open {
+
+        transform: rotate(45deg);
+
+    }
+}
+

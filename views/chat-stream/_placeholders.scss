@@ -1,0 +1,8 @@
+%chat-message-bubble {
+    display: inline-block;
+    border-radius: 1.3em;
+    font-size: 14px;
+    max-width: $phone-width__default - ($phone-frame-thickness_face__sides * 2);
+    padding: 0.6em 1em;
+    min-width: 0;
+}

@@ -1,0 +1,71 @@
+@import '../../styles/application';
+@import './variables';
+
+body,
+.main-view-container {
+    background-color: $theme-color_primary__main;
+}
+
+
+
+[class^="content-container"] {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.button-set-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1 * ($button-width / 2);
+    margin-left: -1 * ($button-width / 2);
+}
+
+.button-set-container {
+    position: relative;
+}
+
+[class^="button_"] {
+    @extend %button_fab;
+    width: $button-width;
+    height: $button-height;
+    background-image: none;
+    background-color: $theme-color-accent__main;
+
+    /* Make them all start in the same position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1 * ($button-width/2);
+    margin-left: -1 * ($button-width/2);
+    cursor: pointer;
+
+    &[class$="__link"] {
+
+        a {
+            @extend %button-link_fab;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+.button_share__toggle {
+    box-shadow: $button-box-shadow;
+
+    &.expanded ~ .button_share__link {
+        box-shadow: $button-box-shadow;
+    }
+}
+
+.button_share__link {
+    box-shadow: none;
+}
+
+
+
+
+

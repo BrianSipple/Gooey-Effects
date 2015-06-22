@@ -1,0 +1,26 @@
+$phone-width__default: 329px;
+$phone-height__default: 551px;
+
+$phone-frame-color: hsla(193, 16%, 45%, 1);
+$phone-frame-thickness_face__top: 60px;
+$phone-frame-thickness_face__bottom: 60px;
+$phone-frame-thickness_face__sides: 15px;
+
+
+$message-view-container-height: $phone-height__default * 0.89;
+$message-input-container-height: $phone-height__default * 0.11;
+
+
+$message-list-padding_top: 15px;
+$message-list-padding_side: 1.68em;
+$message-list-padding_bottom: $message-input-container-height;
+
+
+$background-color_chat-window: hsla(201, 83%, 86%, 1);
+$background-color_message-input: darken($background-color_chat-window, 30%);
+$background-color_chat-message__received: hsla(0, 100%, 100%, 1.0);
+$background-color_chat-message__sent: $background-color_message-input;
+
+
+$font-color_message-input: darken($background-color_message-input, 20%);
+

@@ -1,0 +1,18 @@
+$width_button__menu: 5.5em;
+$height_button__menu: 5.5em;
+
+%button {
+    background-color: hsla(338, 100%, 77%, 1);
+    border-radius: 50%;
+    width: $width_button__menu;
+    height: $height_button__menu;
+    margin-left: -0.5 * $width_button__menu;
+    margin-top: -0.5 * $height_button__menu;
+    border: none;
+    outline: none;
+    position: relative;
+
+    i {
+        font-size: 2em;
+    }
+}
